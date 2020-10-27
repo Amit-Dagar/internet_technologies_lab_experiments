@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <p><b>Step 1: Your details</b></p>
+        <div class="form">
+          <label>Name</label>
+          <input type="text" placeholder="First and last name" size="25" />
+        </div>
+        <div class="form">
+          <label>Email</label>
+          <input type="text" placeholder="example@domain.com" size="25" />
+        </div>
+        <div class="form">
+          <label>Phone</label>
+          <input type="text" placeholder="Eg. +4475000000" size="25" />
+        </div>
+        <p><b>Step 2: Delivery Address</b></p>
+        <div class="form formfield">
+          <label>Address</label><div align = "right">
+          <textarea rows="5" cols="21" role="textbox"></textarea></div>
+        </div>
+        <div class="form">
+          <label>Post Code</label>
+          <input type="text" size="25" />
+        </div>
+        <div class="form">
+          <label>Country</label>
+          <input type="text" size="25" />
+        </div>
+        <p><b>Step 3: Card Address</b></p>
+        <div class="form">
+          <label>Card Type</label>
+          <br /> <br>
+          <label class="radio-inline">
+            <input type="radio" name="credit" /><img
+              src="img/visa.png"
+              class="border-img"
+            />
+            <span>Visa</span>
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="credit" /><img
+              src="img/amex.png"
+              class="border-img"
+            />
+            <span>AmEx</span>
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="credit" /><img
+              src="img/mastercard.png"
+              class="border-img"
+            />
+            <span>Mastercard</span>
+          </label>
+        </div>
+
+        <div class="form">
+          <label>Card Number</label>
+          <input type="text" size="25" />
+        </div>
+        <div class="form">
+          <label>Security Code</label>
+          <input type="text" size="25" />
+        </div>
+        <div class="form">
+          <label>Name on card</label>
+          <input type="text" size="25" />
+        </div>
+        <button>BUY IT!</button>
+      </form>
+    </div>
+  </body>
+</html>
