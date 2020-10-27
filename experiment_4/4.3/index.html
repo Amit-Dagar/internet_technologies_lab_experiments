@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Experiments</title>
+    </head>
+    <body>
+        <div>
+            Sum : <p id="sum" style="display: inline-block;"></p>
+            <br>
+
+            Product: <p id="pro" style="display: inline-block;"></p>
+            <br>
+
+            Modulus: <p id="mod" style="display: inline-block;"></p>
+            <br>
+
+            Subtraction: <p id="sub" style="display: inline-block;"></p>
+            <br>
+
+            Division: <p id="div" style="display: inline-block;"></p>
+            <br>
+
+            Exponentiation: <p id="exp" style="display: inline-block;"></p>
+            <br>
+        </div>
+        <script>
+            var x = prompt(),
+                y = prompt();
+            
+            // SUM
+            document.getElementById('sum').innerText = x + y;
+
+            // PRODUCT
+            document.getElementById('pro').innerText = x * y;
+
+            // MODULUS
+            document.getElementById('mod').innerText = x % y;
+
+            // SUBTRACTION
+            document.getElementById('sub').innerText = x - y;
+
+            // DIVISION
+            document.getElementById('div').innerText = x / y;
+
+            // EXPONENTIATION
+            document.getElementById('exp').innerText = x ** y;
+        </script>
+    </body>
+</html>
