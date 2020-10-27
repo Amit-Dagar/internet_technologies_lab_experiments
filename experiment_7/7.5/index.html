@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Factorial: <div style="display: inline-block;" id="data"></div>
+    <script>
+        var fact = (num) => {
+            var sum = 1;
+            for(var i = 1; i <= num; i++) {
+                sum *=i;
+            }
+            return sum;
+        }
+
+        var num = parseInt(prompt("Enter number: "));
+        document.getElementById('data').innerText = fact(num);
+
+    </script>
+</body>
+</html>

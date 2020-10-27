@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    GCD: <div style="display: inline-block;" id="data"></div>
+    <script>
+        var gcd = function(a, b) {
+            if (b == 0) {
+                return a;
+            }
+            return gcd(b, a % b);
+        };
+
+        document.getElementById('data').innerText = gcd(4,8)
+
+    </script>
+</body>
+</html>
