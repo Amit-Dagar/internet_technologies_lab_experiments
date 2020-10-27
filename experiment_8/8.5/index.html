@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="data">
+        <h2>Library</h2>
+
+    </div>
+    <script>
+        var library = [
+            {
+                author: 'Bill Gates',
+                title: 'The Road Ahead',
+                readingStatus: true
+            },
+            {
+                author: 'Steve Jobs',
+                title: 'Walter Isaacson',
+                readingStatus: true
+            },
+            {
+                author: 'Suzanne Collins',
+                title: 'Mockingjay: The Final Book of The Hunger Games',
+                readingStatus: false
+            }
+        ];
+
+        var data_dom = document.getElementById('data');
+
+        library.forEach((data)=>{
+            data_dom.innerHTML += `
+            <h4>${data.title}</h4>
+            <ul>
+                <li>Author: ${data.author}</li>
+                <li>Reading Status: ${data.readingStatus}</li>
+            </ul>
+            `;
+        })
+
+
+    </script>
+</body>
+</html>

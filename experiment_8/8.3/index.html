@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="data1"></ul> <br>
+    <ul id="data2"></ul>
+    <script>
+        var student = {
+            name : "David Rayy",
+            sclass : "VI",
+            rollno : 12 
+        };
+        var ul = document.getElementById('data1');
+        ul.innerHTML += `<li>Name: ${student.name}</li>`;
+        ul.innerHTML += `<li>Student Class: ${student.sclass}</li>`;
+        ul.innerHTML += `<li>Roll No: ${student.rollno}</li>`;
+        ul.innerHTML += `<li>Email: ${student.email}</li>`;
+
+        student.email = "amitdagar4096@gmail.com";
+
+        ul = document.getElementById('data2');
+        ul.innerHTML += `<li>Name: ${student.name}</li>`;
+        ul.innerHTML += `<li>Student Class: ${student.sclass}</li>`;
+        ul.innerHTML += `<li>Roll No: ${student.rollno}</li>`;
+        ul.innerHTML += `<li>Email: ${student.email}</li>`;
+
+    </script>
+</body>
+</html>
