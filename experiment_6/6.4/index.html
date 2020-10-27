@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Experiments</title>
+    </head>
+    <body>
+        <script>
+            var a = parseInt(prompt("Soft Computing Marks: "));
+            var b = parseInt(prompt("Software Process Marks: "));
+            var c = parseInt(prompt("Minor Project Marks: "));
+            var d = parseInt(prompt("Artifical Neural Network Marks: "));
+            var e = parseInt(prompt("Internet Technologies Marks: "));
+            var p = parseInt( (a + b + c + d + e) / 5);
+
+            var grade_json = [
+                {
+                    grade_name: 'A+',
+                    min: 90,
+                    max: 100
+                },  
+                {
+                    grade_name: 'A',
+                    min: 80,
+                    max: 90
+                },
+                {
+                    grade_name: 'B',
+                    min: 70,
+                    max: 80
+                },
+                {
+                    grade_name: 'C',
+                    min: 60,
+                    max: 70
+                },
+                {
+                    grade_name: 'D',
+                    min: 40,
+                    max: 60
+                },
+                {
+                    grade_name: 'F',
+                    min: 0,
+                    max: 39,
+                },
+            ]
+
+            grade_data = grade_json.filter(data => p >= data.min  && p <= data.max)[0];
+
+            alert("GRADE: " + grade_data.grade_name);
+
+        </script>
+    </body>
+</html>

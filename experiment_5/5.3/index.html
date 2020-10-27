@@ -14,7 +14,7 @@
             for (var i = 0; i < 5; i++) {
                 x.push(prompt("Value of x" + (i+1)));
             }
-            document.getElementById('x').innerText = x.sort();
+            document.getElementById('x').innerText = x.sort(function(a, b){return a - b});
         </script>
     </body>
 </html>
