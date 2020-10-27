@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Experiments</title>
+    </head>
+    <body>
+        <div>
+            x: <p id="x" style="display: inline-block;"></p>
+        </div>
+        <script>
+            var x = [];
+            for (var i = 0; i < 5; i++) {
+                x.push(prompt("Value of x" + (i+1)));
+            }
+            document.getElementById('x').innerText = x.sort();
+        </script>
+    </body>
+</html>

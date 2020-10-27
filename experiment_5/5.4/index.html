@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Experiments</title>
+    </head>
+    <body>
+        <div>
+            x_push: <p id="x_push" style="display: inline-block;"></p> <br>
+            x_pop: <p id="x_pop" style="display: inline-block;"></p> <br>
+            x_shift: <p id="x_shift" style="display: inline-block;"></p> <br>
+            x_unshift: <p id="x_unshift" style="display: inline-block;"></p> <br>
+            x_change: <p id="x_change" style="display: inline-block;"></p> <br>
+            x_sort: <p id="x_sort" style="display: inline-block;"></p> <br>
+            x_splice: <p id="x_splice" style="display: inline-block;"></p> <br>
+            x_slice: <p id="x_slice" style="display: inline-block;"></p> <br>
+            x_toString: <p id="x_toString" style="display: inline-block;"></p> <br>
+            x_concat: <p id="x_concat" style="display: inline-block;"></p> <br>
+            
+        </div>
+        <script>
+            var x = [10,2,3,4,5,60,7,8,9,10];
+
+            // PUSH
+            x.push(11);
+            document.getElementById('x_push').innerText = x;
+
+            // POP
+            x.pop();
+            document.getElementById('x_pop').innerText = x;
+            
+            // SHIFT
+            x.shift();
+            document.getElementById('x_shift').innerText = x;
+
+            // UNSHIFT
+            x.unshift();
+            document.getElementById('x_unshift').innerText = x;
+
+            // SORT
+            document.getElementById('x_sort').innerText = x.sort(function(a, b){return a - b});
+
+            // CHANGE ELEMENT
+            x[0] = (12);
+            document.getElementById('x_change').innerText = x;
+
+            // SPLICE
+            x.splice(1, 0, 13);
+            document.getElementById('x_splice').innerText = x;
+
+            // SLICE;
+            document.getElementById('x_slice').innerText = x.slice(2);
+
+            // toString;
+            document.getElementById('x_toString').innerText = x.toString();
+
+
+            // CONCATINATION;
+            document.getElementById('x_concat').innerText = x.concat([12,13,14]);
+        </script>
+    </body>
+</html>

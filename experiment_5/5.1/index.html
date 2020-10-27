@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Experiments</title>
+    </head>
+    <body>
+        <div>
+            x: <p id="x" style="display: inline-block;"></p> <br>
+            y: <p id="y" style="display: inline-block;"></p> <br>
+            sum: <p id="sum" style="display: inline-block;"></p>
+        </div>
+        <script>
+            var x = [],
+                y = [],
+                length = prompt("Length of arrays: "),
+                sum = [],
+                x_val = '',
+                y_val = '',
+                sum_val = '';
+
+            for (var i = 0; i < length; i++){
+                x.push(parseInt(prompt("Value of x" + (i + 1))));
+                x_val += x[i] + ' ';
+
+                y.push(parseInt(prompt("Value of y" + (i+1))));
+                y_val += y[i] + ' ';
+
+                sum.push(x[i] + y[i]); 
+                sum_val += sum[i] + ' ';
+
+            }
+
+            document.getElementById('x').innerText = x_val;
+            document.getElementById('y').innerText = y_val;
+            document.getElementById('sum').innerText = sum_val;
+
+        </script>
+    </body>
+</html>
