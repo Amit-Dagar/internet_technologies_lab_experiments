@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Q(a)</h2>
+    Fibonacci Sequence: <div style="display: inline-block;" id="fib"></div>
+
+    <h2>Q(b)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Sqrt</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+
+        // Q(a)
+        var fib_val = document.getElementById('fib');
+        var num = parseInt(prompt("Enter a number (fibonacci series): "));
+        var i;
+        var fib = []; // Initialize array!
+
+        fib[0] = 0;
+        fib[1] = 1;
+        fib_val.innerHTML += `${fib[0]}, ${fib[1]}`;
+        for (i = 2; i <= num; i++) {
+            fib[i] = fib[i - 2] + fib[i - 1];
+            fib_val.innerHTML += `, ${fib[i]}`;
+        }
+
+
+        // Q(b)
+        var n = parseInt(prompt("Enter a number (number table): "));
+        var tbody = document.getElementsByTagName('tbody')[0],
+            data = data2 = '', j = 0;
+        for(i = 1; i <= n; i++) {
+            tbody.innerHTML += `
+                <tr>
+                    <td>${i}</td>
+                    <td>${i**2}</td>
+                </tr>
+            `;
+        }
+
+        alert(tbody.innerText)
+
+    </script>
+</body>
+</html>
