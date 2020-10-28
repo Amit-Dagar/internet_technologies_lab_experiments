@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="concat">Concat:- </div>
+    <div id="lower">Lower:- </div>
+    <div id="upper">Upper:- </div>
+    <div id="sort">Sort:- </div>
+    <div id="search">Search:- </div>
+    <div id="replace">replace:- </div>
+    <div id="match">match:- </div>
+    <div id="test">test:- </div>
+    <div id="exec">exec:- </div>
+    <script>
+        var str1 = "Amit";
+        var str2 = "Dagar";
+
+        // CONCATENATION
+        document.getElementById('concat').innerText += str1 + str2;
+
+        // LOWER
+        document.getElementById('lower').innerText += (str1 + str2).toLowerCase();
+
+        // UPPER
+        document.getElementById('upper').innerText += (str1 + str2).toUpperCase();
+
+        // sort
+        document.getElementById('sort').innerText += (str1 + str2).toLowerCase().split('').sort().join('');
+
+        // SEARCH
+        document.getElementById('search').innerText += (str1 + str2).search('Amit');
+
+        // REPLACE
+        document.getElementById('replace').innerText += (str1 + str2).replace('Amit', 'Hello Amit ');
+
+        // MATCH
+        document.getElementById('match').innerText += (str1 + str2).match(/Amit/g);
+
+        // TEST
+        var reg = new RegExp('a');
+        document.getElementById('test').innerText += reg.test(str1 + str2);
+
+        // EXEC
+        document.getElementById('exec').innerText += reg.exec(str1 + str2);
+
+    </script>
+</body>
+</html>
